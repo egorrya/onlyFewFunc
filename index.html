@@ -5,11 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Only Few</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: linear-gradient(
+          45deg,
+          rgba(206, 160, 94, 0),
+          rgba(206, 160, 94, 0.5)
+        );
+        background-attachment: fixed;
+      }
+
+      .container {
+        max-width: 700px;
+      }
+
+      input {
+        display: inline-block;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 13px;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      TEXTAREA {
+        display: inline-block;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 13px;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <input id="howMany" type="text" placeholder="Сколько нужно совпадений?" />
-    <textarea id="ids" rows="5" cols="33" placeholder="Введи ID..."></textarea>
-    <textarea id="output" rows="5" cols="33"></textarea>
+    <div class="container">
+      <input id="howMany" type="text" placeholder="Сколько нужно совпадений?" />
+      <textarea
+        id="ids"
+        rows="5"
+        cols="33"
+        placeholder="Введи ID..."
+      ></textarea>
+      <textarea
+        id="output"
+        rows="5"
+        cols="33"
+        placeholder="Результат"
+      ></textarea>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
